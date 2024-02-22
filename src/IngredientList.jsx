@@ -4,13 +4,15 @@ import IngredientListItem from './IngredientListItem'
 
 function IngredientList({ ingredients }) {
   return (
-    <ul className='ingredientList'>
-        {
-            ingredients.map((ingredient, idx)=> (
-            <IngredientListItem key={idx} ingredient={ingredient} />
-            ))
-        }
-    </ul>
+    <div className='listContainer'>
+      <ul className='ingredientList'>
+          {
+              ingredients.map((ingredient, idx)=> (
+              <IngredientListItem key={idx} ingredient={ingredient} />
+              ))
+          }
+      </ul>
+    </div>
   )
 }
 
