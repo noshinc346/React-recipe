@@ -20,8 +20,9 @@ function App() {
     const ingredientList = ingredients.join("+")
     const res = await axios(`https://api.edamam.com/search?q=${ingredientList}&app_id=${process.env.REACT_APP_APP_ID}&app_key=${process.env.REACT_APP_APP_KEY}`)
     setMeals(res.data.hits)
-    console.log(res.data.hits)
   }
+
+  // console.log(ingredients)
 
   // useEffect(() => {
   //   fetchRecipes()
@@ -35,7 +36,7 @@ function App() {
       
       <NewIngredientForm setIngredients={setIngredients}/>
 
-      <IngredientList ingredients={ingredients}/>
+      <IngredientList ingredients={ingredients} setIngredients={setIngredients}/>
 
       <button onClick={fetchRecipes}>Submit</button>
 

@@ -3,7 +3,7 @@ import { useState } from 'react'
 function NewIngredientForm({ setIngredients }) {
 
     const [newIngredient, setNewIngredient] = useState("")
-    const [sumbit, setSubmit] = useState({})
+    const [submit, setSubmit] = useState({})
     
     function handleChange(e) {
         setNewIngredient(e.target.value)

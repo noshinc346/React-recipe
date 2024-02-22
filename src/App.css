@@ -1,8 +1,11 @@
+body {
+  background-color: #60e1a3;
+}
+
 .App {
   width: 100vw;
   height: 100vh;
   text-align: center;
-  background-color: #60e1a3;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -34,7 +37,9 @@
   border-style: solid;
   border-radius: 25px;
   width: 50%;
-  height: 30vh;
+  /* height: 30vh; */
+  background: #bdffd8;
+
 }
 
 .ingredientListItem {
@@ -58,8 +63,11 @@
 }
 
 .mealbox {
-  border: 3px solid white;
-  padding: 20px;
+  border:5px solid #6bc983;
+  padding: 50px;
+  background: #bdffd8;
+  margin-bottom: 25px;
+  border-radius: 30px;
 }
 
 .meal {
@@ -71,6 +79,7 @@
 }
 
 .recipes-container {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -118,3 +127,20 @@
   color:white;
 }
 
+/* ------- */
+/* mobile */
+@media all and (max-width: 700px) {
+  .listContainer {
+    width: 75%;
+  }
+  .ingredientList{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media all and (max-width: 450px) {
+  .ingredientList{
+    display: flex;
+    flex-direction: column;
+  }
+}
