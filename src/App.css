@@ -57,6 +57,25 @@
   margin: 20px;
 }
 
+.mealbox {
+  border: 3px solid white;
+  padding: 20px;
+}
+
+.meal {
+  width: 300px;
+}
+
+.mealImg {
+  max-width: 200px;
+}
+
+.recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
 
 
 

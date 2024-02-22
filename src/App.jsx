@@ -16,11 +16,13 @@ function App() {
 
   // API FETCH RECIPE ----------------------------------------------------------------------------
   
-  // const fetchRecipes = async () => {
-  //   const ingredientList = ingredients.join("+")
-  //   const res = await axios(`https://api.edamam.com/search?q=${ingredientList}&app_id=${process.env.REACT_APP_APP_ID}&app_key=${process.env.REACT_APP_APP_KEY}`)
-  //   setMeals(res.data.hits)
-  // }
+  const fetchRecipes = async () => {
+    const ingredientList = ingredients.join("+")
+    const res = await axios(`https://api.edamam.com/search?q=${ingredientList}&app_id=${process.env.REACT_APP_APP_ID}&app_key=${process.env.REACT_APP_APP_KEY}`)
+    setMeals(res.data.hits)
+    console.log(res.data.hits)
+  }
+
   // useEffect(() => {
   //   fetchRecipes()
   // }, [])
@@ -35,7 +37,7 @@ function App() {
 
       <IngredientList ingredients={ingredients}/>
 
-      {/* <button onClick={fetchRecipes}>Submit</button>
+      <button onClick={fetchRecipes}>Submit</button>
 
       {meals.length > 0 && (
         <div className='recipes-container'>
@@ -43,7 +45,7 @@ function App() {
             <RecipesList key={idx} meal={meal}/>
           ))}
         </div>
-      )} */}
+      )}
 
     </div>
   );
