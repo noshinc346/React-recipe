@@ -7,6 +7,7 @@ import NewIngredientForm from './NewIngredientForm';
 import RecipesList from './RecipesList';
 
 
+
 function App() {
 
   // State of list of Ingredients in Fridge ----------------------------------------------------------------------------
@@ -32,13 +33,16 @@ function App() {
   // DISPLAY ----------------------------------------------------------------------------
   return (
     <div className="App">
-      <h1 className='title'>What's in Your Fridge?</h1>
+      <div className='header'>
+        <h1 className='title'>What's in Your Fridge<em className='questionmark'>?</em></h1>
+      </div>
+      
       
       <NewIngredientForm setIngredients={setIngredients}/>
 
       <IngredientList ingredients={ingredients} setIngredients={setIngredients}/>
 
-      <button onClick={fetchRecipes}>Submit</button>
+      <button className="submitRecipe" onClick={fetchRecipes}>Submit</button>
 
       {meals.length > 0 && (
         <div className='recipes-container'>

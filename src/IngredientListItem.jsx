@@ -15,8 +15,8 @@ function IngredientListItem({ keyt, ingredient, ingredients, setIngredients }) {
 
 return (
     <li className='ingredientListItem'>
-        <p>{ingredient}</p>
-        <p>{keyt}</p>
+        <p className='ingredientName'>{ingredient}</p>
+        {/* <p>{keyt}</p> */}
         {/* <button className='removeIngredient' 
         onClick={() => handleRemoveItem(keyt)}
         >x</button> */}

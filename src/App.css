@@ -115,7 +115,7 @@ body {
   border-radius: 30px;
   width: 50px;
   height: 30px;
-  background: #9b9b9bad;
+  background: #ff5353ad;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -123,9 +123,40 @@ body {
   color: white;
 }
 
+.in
+
 ::placeholder{
   color:white;
 }
+
+.title{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 4px #000000a1;
+    color: #02ad60;
+    font-size: xxx-large;
+}
+
+.header {
+  background-color: white;
+  width: 100vw;
+}
+
+.submitRecipe {
+  border-radius: 30px;
+  width: 60px;
+  height: 30px;
+  background: #106c2bad;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid #0202023b;
+  margin-top: 10px;
+}
+
 
 /* ------- */
 /* mobile */
