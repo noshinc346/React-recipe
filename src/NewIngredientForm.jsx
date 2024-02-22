@@ -26,6 +26,7 @@ function NewIngredientForm({ setIngredients }) {
           <input 
             id="ingredient" 
             type="search" 
+            placeholder='blah'
             value={newIngredient}
             onChange={handleChange}
           />

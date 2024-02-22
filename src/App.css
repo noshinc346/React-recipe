@@ -3,6 +3,10 @@
   height: 100vh;
   text-align: center;
   background-color: #60e1a3;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
 }
 
 .App-header {
@@ -29,7 +33,6 @@
   border-width: thick;
   border-style: solid;
   border-radius: 25px;
-  margin: auto;
   width: 50%;
   height: 30vh;
 }
@@ -52,5 +55,47 @@
 
 .newIngredientForm {
   margin: 20px;
+}
+
+
+
+
+
+
+.newIngredientForm{
+  width: 100%;
+  max-width: 250px;
+  background-color: rgba(255,255,255,0.3);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 10px 10px 20px;
+}
+
+.newIngredientForm input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  color: white;
+}
+
+
+.newIngredientForm button{
+  border: 0;
+  border-radius: 30px;
+  width: 50px;
+  height: 30px;
+  background: #9b9b9bad;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+::placeholder{
+  color:white;
 }
 
