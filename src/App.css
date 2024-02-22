@@ -123,7 +123,9 @@ body {
   color: white;
 }
 
-.in
+.ingredientName {
+  color: white;
+}
 
 ::placeholder{
   color:white;
@@ -144,9 +146,9 @@ body {
 }
 
 .submitRecipe {
+  font-size: 25px;
   border-radius: 30px;
-  width: 60px;
-  height: 30px;
+  width: 120px;
   background: #106c2bad;
   cursor: pointer;
   display: flex;
@@ -154,7 +156,8 @@ body {
   align-items: center;
   color: white;
   border: 1px solid #0202023b;
-  margin-top: 10px;
+  margin-top: 20px;
+  padding: 5px;
 }
 
 
