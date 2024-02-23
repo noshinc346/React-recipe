@@ -6,6 +6,11 @@ What's in Your Fridge ?
 Food waste is not good! I created an app that allows you to put in ingredients you don't know what to do with in your fridge and gives you recipes that include the items you have. 
 
 ## Getting Started
+
+### Wireframe
+
+![alt text](<Screenshot 2024-02-23 at 12.00.13 PM.png>)
+
 ### API 
 
 * API: https://developer.edamam.com/
