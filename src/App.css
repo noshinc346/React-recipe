@@ -158,6 +158,7 @@ body {
   border: 1px solid #0202023b;
   margin-top: 20px;
   padding: 5px;
+  box-shadow: 2px 4px 0px 1px rgba(0,0,0,.6);
 }
 
 
