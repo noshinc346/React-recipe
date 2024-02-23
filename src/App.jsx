@@ -23,29 +23,24 @@ function App() {
     setMeals(res.data.hits)
   }
 
-  // console.log(process.env.REACT_APP_APP_KEY)
-
-  // console.log(ingredients)
-
-  // useEffect(() => {
-  //   fetchRecipes()
-  // }, [])
-  // ---------------------------------------------------------------------------------------------------------------
-
   // DISPLAY ----------------------------------------------------------------------------
   return (
     <div className="App">
+      
       <div className='header'>
         <h1 className='title'>What's in Your Fridge<em className='questionmark'>?</em></h1>
       </div>
       
-      
+    {/* Adding a new ingredient|Input Bar|Add Button ---------------------------------------------------------------------------- */}
       <NewIngredientForm setIngredients={setIngredients}/>
 
+    {/* States to create the LIST of ingredients ---------------------------------------------------------------------------- */}
       <IngredientList ingredients={ingredients} setIngredients={setIngredients}/>
 
+    {/*Submit Button to trigger API ---------------------------------------------------------------------------- */}
       <button className="submitRecipe" onClick={fetchRecipes}>Submit</button>
 
+    {/* If API fetched recipes do second condition|Maps through the recipes and formats ---------------------------------------------------------------------------- */}
       {meals.length > 0 && (
         <div className='recipes-container'>
           {meals.map((meal, idx) => (
@@ -59,6 +54,13 @@ function App() {
 }
 
 export default App;
+
+
+  // Dont need this unless I need my API to fetch right away ----------------------------------------------------------------------------
+    // useEffect(() => {
+    //   fetchRecipes()
+    // }, [])
+  // ---------------------------------------------------------------------------------------------------------------
 
 
 

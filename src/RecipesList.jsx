@@ -2,9 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function RecipesList({ meal }) {
-
-    // const linkTo = {meal.recipe.irl}
-
+    
   return (
     <div className='mealbox' 
     onClick={(() => window.open(`${meal.recipe.url}`, '_blank')

@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Project Title
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+What's in Your Fridge ?
 
-## Available Scripts
+## Description
+Food waste is not good! I created an app that allows you to put in ingredients you don't know what to do with in your fridge and gives you recipes that include the items you have. 
 
-In the project directory, you can run:
+## Getting Started
+### API 
 
-### `npm start`
+* API: https://developer.edamam.com/
+* Focus Endpoint: https://api.edamam.com/search?q=INGREDIENTSHERE&app_id=&app_key=
+* Example API JSON view : ![alt text](<Screenshot 2024-02-23 at 9.10.19 AM.png>)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used: 
+useState: Used "prev" method to create a visual list of ingredients everytime user inputs.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+open.window: onClick={(() => window.open(`${meal.recipe.url}`, '_blank') -> I made my div boxes clickable so it opens a new tab and takes to a link associated with the recipe.
 
-### `npm test`
+## Approaches Taken
+Wanted to have a fun soft look! Light colors and bubbly fonts
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In order to input the ingredients into my api: 
 
-### `npm run build`
+1. The state of my initial list of ingredients is an empty array 
+2. Once user starts inputing ingredients, display the items as a list and also update the state of the empty array 
+3. Because the ingredients have to be in a format of a string with + in between --> I had to turn my array of ingredients into a combined string with plus sign - ingredients.join("+")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Link to Live Site 
+https://main--elaborate-kulfi-91e102.netlify.app/ 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Relevant Instructions
+There is a search bar to enter ingredients. Add ingredients one at a time. Press submit once you would like recipes. 
 
-### `npm run eject`
+Keep in mind that the first ingredient you enter will be more focused in your meal compared to the consecutive ingredients. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Acknowledgments
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Thank You instructors Megan Chris Raul for the help ;-; <3
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+And the Dev skill Lab was very very useful for my app!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
