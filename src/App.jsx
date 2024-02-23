@@ -23,7 +23,7 @@ function App() {
     setMeals(res.data.hits)
   }
 
-  console.log(process.env.REACT_APP_APP_KEY)
+  // console.log(process.env.REACT_APP_APP_KEY)
 
   // console.log(ingredients)
 
